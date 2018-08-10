@@ -1,0 +1,2 @@
+Hello ~
+This is a website powered by HEXO.
