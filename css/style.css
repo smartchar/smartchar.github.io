@@ -431,8 +431,8 @@
 }
 @font-face {
   font-style: normal;
-  font-family: "苹方 常规";
-  src: local("苹方 常规"), url("../lib/PingFang/PingFang-Regular.ttf") format("truetype");
+  font-family: "苹方 中等";
+  src: local("苹方 中等"), url("../lib/PingFang/PingFang-Medium.ttf") format("truetype");
 }
 *,
 *:before,
@@ -453,7 +453,7 @@ body {
   font-display: swap;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "苹方 中等", "Meslo LG", monospace;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
@@ -1407,7 +1407,7 @@ pre {
   border: 1px dotted #666;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Meslo LG", "苹方 中等", monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -1428,7 +1428,7 @@ code {
   padding: 10px 15px;
   border-radius: 4px;
   background: #f5f5f5;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: "Meslo LG", "苹方 中等", monospace;
   -webkit-border-radius: 4px;
 }
 .highlight figcaption {
