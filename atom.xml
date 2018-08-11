@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>机智字节手册</title>
+  
+  <subtitle>powered by power..</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://smartchar.github.io/"/>
+  <updated>2018-08-10T12:07:29.096Z</updated>
+  <id>https://smartchar.github.io/</id>
+  
+  <author>
+    <name>CAI</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How I make use of Raspberry Pi</title>
+    <link href="https://smartchar.github.io/2018/08/10/How-I-make-use-of-Raspberry-Pi/"/>
+    <id>https://smartchar.github.io/2018/08/10/How-I-make-use-of-Raspberry-Pi/</id>
+    <published>2018-08-10T12:06:33.000Z</published>
+    <updated>2018-08-10T12:07:29.096Z</updated>
+    
+    <content type="html"><![CDATA[<p>利用树莓派作为跳板，从校园外区域访问校园网资源</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;利用树莓派作为跳板，从校园外区域访问校园网资源&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
