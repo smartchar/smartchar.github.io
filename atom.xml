@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>机智字节手册</title>
   
-  <subtitle>powered by power..</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smartchar.github.io/"/>
