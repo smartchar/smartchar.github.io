@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>机智字节手册</title>
+  <title>SMART CHAR</title>
   
-  <subtitle>设计/绘画/摄影/线性代数</subtitle>
+  <subtitle>Design/Linear Algebra</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smartchar.github.io/"/>
-  <updated>2018-09-30T07:21:48.962Z</updated>
+  <updated>2020-04-09T11:55:51.970Z</updated>
   <id>https://smartchar.github.io/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Food Exhibition</title>
+    <link href="https://smartchar.github.io/2020/04/09/Food%20Exhibition/"/>
+    <id>https://smartchar.github.io/2020/04/09/Food Exhibition/</id>
+    <published>2020-04-09T10:48:37.000Z</published>
+    <updated>2020-04-09T11:55:51.970Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>北京不欢迎你</title>
