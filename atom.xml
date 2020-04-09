@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SMART CHAR</title>
+  <title>Snapshot of Cai</title>
   
-  <subtitle>Design/Linear Algebra</subtitle>
+  <subtitle>Design / Learning</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smartchar.github.io/"/>
-  <updated>2020-04-09T11:55:51.970Z</updated>
+  <updated>2020-04-09T12:27:48.386Z</updated>
   <id>https://smartchar.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://smartchar.github.io/2020/04/09/Food%20Exhibition/"/>
     <id>https://smartchar.github.io/2020/04/09/Food Exhibition/</id>
     <published>2020-04-09T10:48:37.000Z</published>
-    <updated>2020-04-09T11:55:51.970Z</updated>
+    <updated>2020-04-09T12:27:48.386Z</updated>
     
     <summary type="html">
     
