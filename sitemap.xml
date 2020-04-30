@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://smartchar.cn/2020/04/10/%E6%9C%B4%E5%AE%9E%E6%97%A0%E5%8D%8E%E6%9E%AF%E7%87%A5%E7%94%9F%E6%B4%BB%20-%20Robotics%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%BF%9B%E5%B1%95%E5%96%9C%E4%BA%BA/</loc>
+    <loc>https://smartchar.cn/2020/04/23/%E6%9C%B4%E5%AE%9E%E6%97%A0%E5%8D%8E%E6%9E%AF%E7%87%A5%E7%94%9F%E6%B4%BB%20-%20%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%A5%BD%E5%B8%AE%E6%89%8B/</loc>
     
-    <lastmod>2020-04-23T09:36:02.101Z</lastmod>
+    <lastmod>2020-04-30T04:22:45.271Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://smartchar.cn/2018/09/16/2018%E5%B9%B4%E5%8C%97%E4%BA%AC%E9%A9%B1%E9%80%90%E3%80%8C%E4%BD%8E%E7%AB%AF%E4%BA%BA%E5%8F%A3%E3%80%8D%E4%BA%8B%E4%BB%B6/</loc>
+    
+    <lastmod>2020-04-30T04:09:38.283Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://smartchar.cn/2020/04/10/%E6%9C%B4%E5%AE%9E%E6%97%A0%E5%8D%8E%E6%9E%AF%E7%87%A5%E7%94%9F%E6%B4%BB%20-%20Robotics%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2020-04-30T03:43:51.259Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>https://smartchar.cn/2020/04/18/PyTorch%20-%20%E4%BD%BF%E7%94%A8GPU%E8%BF%9B%E8%A1%8C%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
     
     <lastmod>2020-04-23T09:35:49.176Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://smartchar.cn/2020/04/23/%E6%9C%B4%E5%AE%9E%E6%97%A0%E5%8D%8E%E6%9E%AF%E7%87%A5%E7%94%9F%E6%B4%BB%20-%20%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%A5%BD%E5%B8%AE%E6%89%8B/</loc>
-    
-    <lastmod>2020-04-23T09:35:44.532Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://smartchar.cn/about/index.html</loc>
     
     <lastmod>2020-04-11T08:56:50.624Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://smartchar.cn/2018/09/16/2018%E5%B9%B4%E5%8C%97%E4%BA%AC%E9%A9%B1%E9%80%90%E3%80%8C%E4%BD%8E%E7%AB%AF%E4%BA%BA%E5%8F%A3%E3%80%8D%E4%BA%8B%E4%BB%B6/</loc>
-    
-    <lastmod>2020-04-11T05:13:30.383Z</lastmod>
     
   </url>
   
