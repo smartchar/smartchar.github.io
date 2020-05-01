@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://smartchar.cn/2020/04/10/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF%20-%20Robotics%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2020-05-01T02:47:20.397Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://smartchar.cn/2020/04/23/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF%20-%20%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%A5%BD%E5%B8%AE%E6%89%8B/</loc>
+    
+    <lastmod>2020-05-01T02:46:51.253Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://smartchar.cn/2020/04/18/PyTorch%20-%20%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
     
     <lastmod>2020-05-01T01:50:08.725Z</lastmod>
@@ -26,20 +40,6 @@
     <loc>https://smartchar.cn/2020/04/18/PyTorch%20-%20%E4%BD%BF%E7%94%A8GPU%E8%BF%9B%E8%A1%8C%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
     
     <lastmod>2020-05-01T01:43:26.530Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://smartchar.cn/2020/04/23/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF%20-%20%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%A5%BD%E5%B8%AE%E6%89%8B/</loc>
-    
-    <lastmod>2020-05-01T01:42:48.544Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://smartchar.cn/2020/04/10/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF%20-%20Robotics%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/</loc>
-    
-    <lastmod>2020-05-01T01:37:21.189Z</lastmod>
     
   </url>
   
