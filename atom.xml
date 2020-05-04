@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smartchar.cn/"/>
-  <updated>2020-05-01T13:38:41.421Z</updated>
+  <updated>2020-05-04T09:37:52.643Z</updated>
   <id>https://smartchar.cn/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>NUA2 Thesis | LaTeX模板初探</title>
+    <link href="https://smartchar.cn/2020/05/04/NUA2%20Thesis%20-%20LaTeX%E6%A8%A1%E6%9D%BF%E5%88%9D%E6%8E%A2/"/>
+    <id>https://smartchar.cn/2020/05/04/NUA2 Thesis - LaTeX模板初探/</id>
+    <published>2020-05-04T08:00:00.000Z</published>
+    <updated>2020-05-04T09:37:52.643Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;</p><p>使用Microsoft Word来写毕业论文操作简单，所见即所得。但是在文档涉及大量图片、公式时，文档启动、翻页、保存过程就不是很流畅。此外，学位论文的格式要求繁琐，比如字体、段落间隔、缩进、公式编号、图片排版之类的问题常常让人心力憔悴。LaTeX模板的出现就是将我们从诸如此类的体力劳动上解放出来，将注意力放在论文内容上。<br><a id="more"></a><br>不用担心，虽然它听起来比较陌生，但你只需要花上几个小时就可以掌握它90%的用法，节省你未来几十个小时的体力劳动时间。本人研究生学位论文使用LaTeX模板编写，经历了查重、提交学院、提交图书馆和打印过程，实践证明各个流程都无障碍，体验顺滑。</p><h2 id="TeX、LaTeX、TeX-Live"><a href="#TeX、LaTeX、TeX-Live" class="headerlink" title="TeX、LaTeX、TeX Live"></a>TeX、LaTeX、TeX Live</h2><p>使用之前我们先花几分钟了解一些概念，这将有助于提升你对这个模板的掌控感。</p><p><strong>TeX</strong>是一个引擎。它定义了命令与文档格式的对应关系，其作用是将用户输入的命令生成格式化的文档。（TeX引擎有：Knuth TeX、e-TeX、pdfTeX、LuaTeX、XeTeX、pTeX、upTeX、e-upTeX、pTeX-ng，引擎的概念可类比C语言的gcc）</p><p><strong>LaTeX</strong>是一种宏语言。它将TeX的某些命令封装成一种宏格式，用户不需要输入TeX的底层命令，只需输入按照这种宏语言输入宏。LaTeX将宏解释成TeX命令，然后交给TeX引擎生成格式化的文档。（其他宏语言有：plain TeX，LaTeX是当今使用最为广泛的宏语言。）</p><p><strong>TeX Live</strong>是TeX的发行版本。它包含了若干TeX引擎和若干宏语言，同时提供一个命令编辑器（TeX works），使得用户可以方便完成编辑命令、选择宏语言、调用引擎生成文档的流程。（其他TeX发行版本有：TeXStudio）</p><p>引擎和宏语言组合成一种格式，生成文档前，我们需要告诉软件我在使用什么格式。常见的格式有</p><p>（引擎 + 宏语言 &gt; 格式）</p><ul><li>e-TeX + LaTeX &gt; LaTeX</li><li>pdfTeX + LaTeX  &gt; pdfLaTeX</li><li>LuaTeX + LaTeX  &gt; LuaLaTeX</li><li>XeTeX + LaTeX  &gt; XeLaTeX</li><li>pTeX + LaTeX  &gt; pLaTeX</li><li>upTeX + LaTeX  &gt; upLaTeX</li><li>e-upTeX + LaTeX  &gt; e-upLaTeX</li><li>pTeX-ng + LaTeX  &gt; pLaTeX-ng</li></ul><h2 id="南京航空航天大学-非官方-学位论文-LaTeX-模板"><a href="#南京航空航天大学-非官方-学位论文-LaTeX-模板" class="headerlink" title="南京航空航天大学(非官方)学位论文 LaTeX 模板"></a>南京航空航天大学(非官方)学位论文 LaTeX 模板</h2><p>基于上述的引擎、宏语言等，南航民间校友开发了一套模板：<a href="https://github.com/nuaatug/nuaathesis" target="_blank" rel="noopener">南京航空航天大学(非官方)学位论文 LaTeX 模板</a>（下面简称为<strong>NUA2 Thesis</strong>），开源发布在Github上。据悉是由几名南航校友2017年左右费劲力气倒腾出来的，模板参照南航官方的<a href="http://aao.nuaa.edu.cn/2016/1222/c8098a170586/page.psp" target="_blank" rel="noopener">《本科毕业设计（论文）撰写格式要求》</a>和<a href="http://www.graduate.nuaa.edu.cn/2011/0831/c2122a53807/page.htm" target="_blank" rel="noopener">《南京航空航天大学研究生学位论文撰写要求》（2015年4月修订）</a>制作。</p><p>前人栽树，后人乘凉。感谢校友们的辛勤劳动~</p><h2 id="生成你的第一篇文档"><a href="#生成你的第一篇文档" class="headerlink" title="生成你的第一篇文档"></a>生成你的第一篇文档</h2><p>准备工作：</p><ul><li>下载并安装<a href="https://www.tug.org/texlive/acquire-netinstall.html" target="_blank" rel="noopener">TeX Live</a></li><li>下载并安装<a href="https://www.xm1math.net/texmaker/" target="_blank" rel="noopener">Texmaker</a></li><li>下载<a href="https://github.com/nuaatug/nuaathesis/releases" target="_blank" rel="noopener">NUA2 Thesis</a></li></ul><p>根据你的网络状态，这两个工作可能花费几分钟到几个小时的时间，不要着急，期间你可以去做其他事情。</p><p>NUA2 Thesis文件夹内部有三个文件夹demo_chs、demo_en和demo_ja，一般我们都是使用中文写论文，所以我们只用关心demo_chs这个文件夹里面的内容：</p><ul><li>\bib：存放参考文献目录</li><li>\content：存放子章节</li><li>\fig：存放论文图</li><li>*.tex：论文源文件</li><li>*.pdf：最终生成的文档</li><li>*.bst：格式定义</li><li>*.cls：格式定义</li></ul><p>.tex文件是论文编辑的源文件，我们在.tex文件中输入论文，TeX引擎会将.tex文件渲染成最终的pdf文档。</p><p>用Texmaker打开master.tex文件，master.tex相当于C语言里的main()函数。我们先不细究这个文件里面各行代码的意思，而选用一种TeX引擎渲染master.tex来生成文档获得直观的了解。</p><p>按照NUA2 Thesis的指导，我们（1）使用<code>XeLaTeX</code>格式，（2）点击<code>Run</code>，（3）运行十几秒之后，提示无报错就说明生成成功，（4）选择<code>View pdf</code>，（5）点击<code>View</code>就可以在右侧看到生成的pdf文档了。图解如下：</p><p><img src="./NUA2/L1-1.jpg" alt=""><br><img src="./NUA2/L1-2.jpg" alt=""><br><img src="./NUA2/L1-3.jpg" alt=""><br><img src="./NUA2/L1-4.jpg" alt=""><br><img src="./NUA2/L1-5.jpg" alt=""><br><img src="./NUA2/L1-6.jpg" alt=""><br>至此验证完毕：LaTeX软件安装正常、模板运行正常，接下来要做的就是往这个模板里填充内容，正式开始写论文啦。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp;&lt;/p&gt;
+&lt;p&gt;使用Microsoft Word来写毕业论文操作简单，所见即所得。但是在文档涉及大量图片、公式时，文档启动、翻页、保存过程就不是很流畅。此外，学位论文的格式要求繁琐，比如字体、段落间隔、缩进、公式编号、图片排版之类的问题常常让人心力憔悴。LaTeX模板的出现就是将我们从诸如此类的体力劳动上解放出来，将注意力放在论文内容上。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="论文排版" scheme="https://smartchar.cn/tags/%E8%AE%BA%E6%96%87%E6%8E%92%E7%89%88/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一些好玩的东西 | Grammarly、防疫末期的武汉街头</title>
     <link href="https://smartchar.cn/2020/04/30/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF%20-%20Grammarly%E3%80%81%E9%98%B2%E7%96%AB%E6%9C%AB%E6%9C%9F%E7%9A%84%E6%AD%A6%E6%B1%89%E8%A1%97%E5%A4%B4/"/>
     <id>https://smartchar.cn/2020/04/30/一些好玩的东西 - Grammarly、防疫末期的武汉街头/</id>
     <published>2020-04-30T08:00:00.000Z</published>
-    <updated>2020-05-01T13:38:41.421Z</updated>
+    <updated>2020-05-04T09:30:19.264Z</updated>
     
     <content type="html"><![CDATA[<p>&emsp;<br><a id="more"></a></p><h4 id="好玩的工具"><a href="#好玩的工具" class="headerlink" title="好玩的工具"></a>好玩的工具</h4><ul><li><p>Grammarly, PowerWritingAid and Microsoft Word<br>  少数派的文章 <a href="https://sspai.com/post/59984" target="_blank" rel="noopener">我的英语智能写作助手，是否真的「智能」？</a> 和 <a href="https://sspai.com/post/60185" target="_blank" rel="noopener">Microsoft Editor vs. Grammarly: 谁更适合你？</a> 介绍 PowerWritingAid 和 Grammarly 的使用体验对比，正好今天需要检查一下论文的摘要，我就试用了一下这三个软件的效果：Grammarly 免费版，PowerWritingAid 免费版，Microsoft Word。三个软件都能做的有单词拼写检查、标点使用检查，PowerWritingAid 免费版可以在这个基础上进行句式分析，比如检查出被动句并建议优化成主动语态，还可以检查副词并建议删除。显然这些建议不符合科技文的表达风格，于是这个功能对我来说没有什么用处。PowerWritingAid 免费版能做到的 Grammarly 免费版也可以做到，此外 Grammarly 免费版可以检查定冠词使用，比如缺定冠词或者定冠词用错。<br>  <img src="http://q8b0crcx6.bkt.clouddn.com/article.png" width="100%" height="100%" alt="定冠词检查" align="center"></p>  <center><font size="1"> ▲ 缺少定冠词</font> </center><p>  <img src="http://q8b0crcx6.bkt.clouddn.com/a-an.png" width="100%" height="100%" alt="定冠词检查" align="center"></p>  <center><font size="1"> ▲ 定冠词搭配不当</font> </center></li><li><p>PowerToys<br>  微软官方的提升 Windows 使用体验的小工具软件合集 <a href="https://github.com/microsoft/PowerToys" target="_blank" rel="noopener">PowerToys</a>，功能有文件批量重命名、图像修改尺寸，我觉得比较有趣的是快捷键导航和窗口自动布局功能。快捷键导航是长按<code>Windows</code>键，屏幕会弹出快捷键组合。我 Windows 组合快捷键使用比较频繁，但用这个功能来了解一些冷门的快捷键很不错。窗口自动布局功能是预先设置一个窗口布局，比如左右分栏。之后按住<code>Shift</code>键将当前窗口拖进分配好的区域即可。下面贴一个快捷键指导的使用过程截图。<br>  <img src="http://q8b0crcx6.bkt.clouddn.com/powertoys.png" width="100%" height="100%" alt="PowerToys" align="center"></p>  <center><font size="1"> ▲ 快捷键导航使用过程</font> </center></li><li><p>Size.link<br>  如果你在网上购买某个尺寸的物品的同时又不太能感知这种尺寸拿到手后具体有多大，那么进入这个网站可以帮助到你。进入网页，输入长、宽、高，就可以通过AR在你的桌子或者地板上看这个东西具体有多大。网址：<a href="https://size.link" target="_blank" rel="noopener">size.link]</a><br>  <img src="http://q8b0crcx6.bkt.clouddn.com/size.link.jpg" width="100%" height="100%" alt="PowerToys" align="center"></p>  <center><font size="1"> ▲ 地板上显示出立方体</font> </center></li></ul><h4 id="人类观察"><a href="#人类观察" class="headerlink" title="人类观察"></a>人类观察</h4><p><img src="http://q8b0crcx6.bkt.clouddn.com/matou.jpg" width="100%" height="100%" alt="中华路码头" align="center"></p><center><font size="1"> ▲ 中华路码头，乘客乘坐前需要扫码、量体温（2020年4月16日，武汉市武昌区街头）</font> </center><p><img src="http://q8b0crcx6.bkt.clouddn.com/zhijing.jpg" width="100%" height="100%" alt="致敬白衣天使" align="center"></p><center><font size="1"> ▲ 「致敬白衣天使」（2020年4月16日，武汉市武昌区街头）</font> </center><p><img src="http://q8b0crcx6.bkt.clouddn.com/cunzi.jpg" width="100%" height="100%" alt="致敬白衣天使" align="center"></p><center><font size="1"> ▲ 在老家躲避了两个多月的瘟疫：起点时刻和终点时刻 </font> </center><p><img src="http://q8b0crcx6.bkt.clouddn.com/liaotian.jpg" width="100%" height="100%" alt="致敬白衣天使" align="center"></p><center><font size="1"> ▲ 哈哈哈哈 </font> </center>]]></content>
     
