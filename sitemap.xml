@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://smartchar.cn/gallery/index.html</loc>
+    
+    <lastmod>2020-05-06T13:23:56.835Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://smartchar.cn/tags/index.html</loc>
     
     <lastmod>2020-05-06T09:10:51.465Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://smartchar.cn/2020/04/18/PyTorch%20-%20%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
     
     <lastmod>2020-05-05T09:27:03.539Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://smartchar.cn/gallery/index.html</loc>
-    
-    <lastmod>2020-05-01T13:46:23.711Z</lastmod>
     
   </url>
   
