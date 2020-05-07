@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    NUA2 Thesis | LaTeX模板填充 |
+    NUA2 Thesis | 内容填充 (2) |
     
     littleexplorer</title>
   
@@ -25,7 +25,7 @@
 <body>
 <main class="content">
   <section class="outer">
-  <article id="post-NUA2 Thesis - LaTeX模板填充" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  <article id="post-NUA2 Thesis - 内容填充 （2）" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
     <div class="article-inner">
         
@@ -33,7 +33,7 @@
                 
   
     <h1 class="article-title" itemprop="name">
-      NUA2 Thesis | LaTeX模板填充
+      NUA2 Thesis | 内容填充 (2)
     </h1>
   
   
@@ -46,7 +46,7 @@
 
                 
                     <div class="article-meta">
-                        <a href="/2020/05/06/NUA2 Thesis - LaTeX模板填充/" class="article-date">
+                        <a href="/2020/05/06/NUA2 Thesis - 内容填充 （2）/" class="article-date">
   <time datetime="2020-05-06T08:00:00.000Z" itemprop="datePublished">2020-05-06</time>
 </a>
                             
@@ -71,7 +71,7 @@
 
                                                 
                                                                     <p>&emsp;<br><a id="more"></a></p>
-<h2 id="1-理解主文件-master-tex-结构"><a href="#1-理解主文件-master-tex-结构" class="headerlink" title="1 理解主文件 master.tex 结构"></a>1 理解主文件 <code>master.tex</code> 结构</h2><ul>
+<h2 id="1主文件-master-tex-结构"><a href="#1主文件-master-tex-结构" class="headerlink" title="1主文件 master.tex 结构"></a>1主文件 <code>master.tex</code> 结构</h2><ul>
 <li><p>格式定义</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[</span><br><span class="line">lang=cn,  </span><br><span class="line">degree=master,</span><br><span class="line">% zhuanshuo,</span><br><span class="line">openany,oneside</span><br><span class="line">% openright,blankleft,twoside</span><br><span class="line">]&#123;nuaathesis&#125;</span><br></pre></td></tr></table></figure>
 <p>  这一部分定义了文档的全局格式，lang=cn指使用中文，degree=master指使用研究生论文模板，%是LaTeX语言的注释符号，% zhuanshuo 指使用学硕模板（如果要使用专硕模板就将%去掉），写论文时使用openany,oneside，需要提交图书馆打印时，将openany,oneside注释掉，将openright,blankleft,twoside取消注释，从而打印摘要、承诺书右侧空白的界面。</p>
@@ -89,22 +89,43 @@
 <p>  include是用来插入存放在其他文件中的内容，类似C语言的include用法。这个模板把内容分开放在了不同的.tex源文件中，然后通过include聚合在一起。</p>
 </li>
 </ul>
-<h2 id="2-填充内容"><a href="#2-填充内容" class="headerlink" title="2 填充内容"></a>2 填充内容</h2><p>NUA2 Thesis 模板的思想是将不同章节放在不同的<code>.tex</code>文件中保存，然后通过<code>include</code>命令将所有章节的<code>.tex</code>文件聚合在一起。我不打算用这种结构，原因是：Texmaker编辑器可以识别一个<code>.tex</code>文件内的结构，并以大纲的形式显示在左侧。如果使用多个文件存放不同章节的内容，那么就不能显示大纲了，只会显示文件列表。</p>
-<p>我们先来删掉<code>master.tex</code>中的以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\include&#123;content/start&#125;</span><br><span class="line">\include&#123;content/highlight&#125;</span><br><span class="line">\include&#123;content/theorem2&#125;</span><br><span class="line">\include&#123;content/demo&#125;</span><br><span class="line"></span><br><span class="line">\appendix</span><br><span class="line">% 如果需要附录的话，在这里 include</span><br><span class="line">\include&#123;content/ex_postscript&#125;</span><br></pre></td></tr></table></figure></p>
-<p>然后在<code>\mainmatter</code>和<code>\backmatter</code>两行之间像这样填充论文第一章至最后一章的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">\mainmatter</span><br><span class="line"></span><br><span class="line">\chapter&#123;绪论&#125;</span><br><span class="line">本章介绍磁悬浮轴承...</span><br><span class="line"></span><br><span class="line">\section&#123;磁悬浮轴承研究现状&#125;</span><br><span class="line">众所周知...</span><br><span class="line"></span><br><span class="line">\subsection&#123;国内&#125;</span><br><span class="line">众所周知...</span><br><span class="line"></span><br><span class="line">\subsection&#123;国外&#125;</span><br><span class="line"></span><br><span class="line">\chapter&#123;磁悬浮轴承原理&#125;</span><br><span class="line">\section&#123;磁悬浮轴承动力学模型&#125;</span><br><span class="line">\subsection&#123;机械结构&#125;</span><br><span class="line">\subsection&#123;控制原理&#125;</span><br><span class="line"></span><br><span class="line">\backmatter</span><br></pre></td></tr></table></figure></p>
-<p>按<code>Ctrl</code>+<code>s</code>保存之后，点击<code>Run</code>等待编译完，然后点<code>View</code>，就可以看到生成的文档啦：<br><img src="L2-1.jpg" alt=""></p>
-<p>除了第一章至最后一张的内容需要填充，我们还需要修改封面、摘要、致谢的信息。</p>
-<ul>
-<li>封面（中文和英文）：在<code>global.tex</code>文件中修改</li>
+<h2 id="2-填充内容"><a href="#2-填充内容" class="headerlink" title="2 填充内容"></a>2 填充内容</h2><ul>
+<li><p>填充第一章到第六章的内容</p>
+<p>  NUA2 Thesis 模板的思想是将不同章节放在不同的<code>.tex</code>文件中保存，然后通过<code>include</code>命令将所有章节的<code>.tex</code>文件聚合在一起。我不打算用这种结构，原因是：Texmaker编辑器可以识别一个<code>.tex</code>文件内的结构，并以大纲的形式显示在左侧。如果使用多个文件存放不同章节的内容，那么就不能显示大纲了，只会显示文件列表。</p>
+<p>  我们先来删掉<code>master.tex</code>中的以下代码：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\include&#123;content/start&#125;</span><br><span class="line">\include&#123;content/highlight&#125;</span><br><span class="line">\include&#123;content/theorem2&#125;</span><br><span class="line">\include&#123;content/demo&#125;</span><br><span class="line"></span><br><span class="line">\appendix</span><br><span class="line">% 如果需要附录的话，在这里 include</span><br><span class="line">\include&#123;content/ex_postscript&#125;</span><br></pre></td></tr></table></figure>
+<p>  然后在<code>\mainmatter</code>和<code>\backmatter</code>两行之间像这样填充论文第一章至最后一章的内容：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">\mainmatter</span><br><span class="line"></span><br><span class="line">\chapter&#123;绪论&#125;</span><br><span class="line">本章介绍磁悬浮轴承...</span><br><span class="line"></span><br><span class="line">\section&#123;磁悬浮轴承研究现状&#125;</span><br><span class="line">众所周知...</span><br><span class="line"></span><br><span class="line">\subsection&#123;国内&#125;</span><br><span class="line">众所周知...</span><br><span class="line"></span><br><span class="line">\subsection&#123;国外&#125;</span><br><span class="line"></span><br><span class="line">\chapter&#123;磁悬浮轴承原理&#125;</span><br><span class="line">\section&#123;磁悬浮轴承动力学模型&#125;</span><br><span class="line">\subsection&#123;机械结构&#125;</span><br><span class="line">\subsection&#123;控制原理&#125;</span><br><span class="line"></span><br><span class="line">\backmatter</span><br></pre></td></tr></table></figure>
+<p>  按<code>Ctrl</code>+<code>s</code>保存之后，点击<code>Run</code>等待编译完，然后点<code>View</code>，就可以看到生成的文档啦：<br>  <img src="L2-1.jpg" alt=""></p>
+<p>  除了第一章至最后一张的内容需要填充，我们还需要修改封面、摘要、致谢等信息。</p>
+</li>
+<li><p>封面（中文和英文）：在<code>global.tex</code>文件中修改</p>
+</li>
 <li>承诺书：无需修改，自动生成</li>
 <li>摘要（中文和英文）：在<code>global.tex</code>文件中修改</li>
 <li>目录：无需修改，自动生成</li>
 <li>图标清单：无需修改，自动生成</li>
 <li>注释表：在<code>content\abbr.tex</code>中修改</li>
 <li>致谢：在<code>content\acknowledge.tex</code>中修改</li>
-<li>在学期间的研究成果及学术论文情况：在<code>content\backmatter.tex</code>中修改</li>
+<li><p>在学期间的研究成果及学术论文情况：在<code>content\backmatter.tex</code>中修改</p>
+</li>
+<li><p>填充参考文献</p>
+</li>
 </ul>
-<p>至此，你已经掌握了这个模板框架的90%的内容，还剩下参考文献没有处理。</p>
+<p>我们先将所有需要用到的参考文献以条目的形式储存在<code>bib\sample.bib</code>中，然后在需要正文需要引用的地方「艾特」某条参考文献即可，使用流程如下：</p>
+<p>我需要用到的参考文献的是《The internal model principle for linear multivariable regulators》，在谷歌学术或者百度学术中搜索这篇文章，下载得到这种格式的条目：</p>
+<p><img src="L2-2.jpg" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;francis1975internal,</span><br><span class="line">  title=&#123;The internal model principle for linear multivariable regulators&#125;,</span><br><span class="line">  author=&#123;Francis, Bruce A and Wonham, William M&#125;,</span><br><span class="line">  journal=&#123;Applied mathematics and optimization&#125;,</span><br><span class="line">  volume=&#123;2&#125;,</span><br><span class="line">  number=&#123;2&#125;,</span><br><span class="line">  pages=&#123;170--194&#125;,</span><br><span class="line">  year=&#123;1975&#125;,</span><br><span class="line">  publisher=&#123;Springer&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>把这一条放置在<code>bib\sample.bib</code>的任意位置就相当于把这条参考文献添加到了你自己的引用库中了，下面就可以在正文的任意位置引用它了。像这样引用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是一条引用\cite&#123;francis1975internal&#125;。</span><br></pre></td></tr></table></figure>
+<p>添加完引用后，我们编译过程需要额外进行一次<code>BibTex</code>编译<code>master.tex</code>，才能让参考文献正确地显示在正文中。完整的编译流程是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XeLaTeX &gt; BibTeX &gt; XeLaTeX &gt; XeLaTeX &gt; View pdf</span><br></pre></td></tr></table></figure>
+<p><code>BibTex</code>听起来有点陌生，你不用关心这是什么，只用知道<code>BibTex</code>和<code>XeLaTex</code>在同一个列表中，选择之后点击左侧的三角形<code>Run</code>图标即开始编译了。</p>
+<p><img src="L2-3.jpg" alt=""></p>
+<p>可能你也看出来了，一共需要点击5次<code>Run</code>才能看到最终的pdf文档，这不符合「解放劳动力」的宗旨，好在Texmaker编辑器给我们提供了<code>Quick Build</code>功能。点击上方菜单栏的<code>Option</code>&gt;<code>Configure Texmaker</code>，弹出配置界面后按照下图序号所示的步骤进行配置，点<code>OK</code>完成配置。现在，我们就可以<code>Run`</code>Quick Build`，稍等一会儿就可以看到新生成的文档了：</p>
+<p><img src="L2-4.jpg" alt=""></p>
+<p><img src="L2-5.jpg" alt=""></p>
+<p>至此，你已经掌握了这个模板的90%的内容，余下一点简单的公式、图标和单位的处理。</p>
 
                                                                         
                                     </div>
@@ -121,10 +142,19 @@
         
   <nav class="article-nav">
     
+      <a href="/2020/05/07/NUA2 Thesis - 公式、图表、单位的处理 （3）/" class="article-nav-link">
+        <strong class="article-nav-caption">Newer</strong>
+        <div class="article-nav-title">
+          
+            NUA2 Thesis | 公式、图表、单位的处理 （3）
+          
+        </div>
+      </a>
     
-      <a href="/2020/05/04/NUA2 Thesis - LaTeX模板初探/" class="article-nav-link">
+    
+      <a href="/2020/05/04/NUA2 Thesis - Hello World （1）/" class="article-nav-link">
         <strong class="article-nav-caption">Older</strong>
-        <div class="article-nav-title">NUA2 Thesis | LaTeX模板初探</div>
+        <div class="article-nav-title">NUA2 Thesis | Hello World ! (1)</div>
       </a>
     
   </nav>

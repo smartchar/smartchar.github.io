@@ -58,7 +58,7 @@
       <h1 class="page-type-title"></h1>
       
         
-          <article id="post-NUA2 Thesis - LaTeX模板初探" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+          <article id="post-NUA2 Thesis - Hello World （1）" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
     <div class="article-inner">
         
@@ -66,7 +66,7 @@
                 
   
     <h2 itemprop="name">
-      <a class="article-title" href="/2020/05/04/NUA2 Thesis - LaTeX模板初探/">NUA2 Thesis | LaTeX模板初探</a>
+      <a class="article-title" href="/2020/05/04/NUA2 Thesis - Hello World （1）/">NUA2 Thesis | Hello World ! (1)</a>
     </h2>
   
   
@@ -83,7 +83,7 @@
 
                 
                     <div class="article-meta">
-                        <a href="/2020/05/04/NUA2 Thesis - LaTeX模板初探/" class="article-date">
+                        <a href="/2020/05/04/NUA2 Thesis - Hello World （1）/" class="article-date">
   <time datetime="2020-05-04T08:00:00.000Z" itemprop="datePublished">2020-05-04</time>
 </a>
                             
@@ -119,7 +119,7 @@
 
 </article>
         
-          <article id="post-NUA2 Thesis - LaTeX模板填充" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+          <article id="post-NUA2 Thesis - 公式、图表、单位的处理 （3）" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
     <div class="article-inner">
         
@@ -127,7 +127,7 @@
                 
   
     <h2 itemprop="name">
-      <a class="article-title" href="/2020/05/06/NUA2 Thesis - LaTeX模板填充/">NUA2 Thesis | LaTeX模板填充</a>
+      <a class="article-title" href="/2020/05/07/NUA2 Thesis - 公式、图表、单位的处理 （3）/">NUA2 Thesis | 公式、图表、单位的处理 （3）</a>
     </h2>
   
   
@@ -140,7 +140,68 @@
 
                 
                     <div class="article-meta">
-                        <a href="/2020/05/06/NUA2 Thesis - LaTeX模板填充/" class="article-date">
+                        <a href="/2020/05/07/NUA2 Thesis - 公式、图表、单位的处理 （3）/" class="article-date">
+  <time datetime="2020-05-07T08:00:00.000Z" itemprop="datePublished">2020-05-07</time>
+</a>
+                            
+                    </div>
+                    
+
+                        
+
+                                    <div class="article-entry" itemprop="articleBody">
+                                        
+
+
+                                            
+
+                                                
+                                                                    <p>&emsp;</p>
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>如果你之前一直在用MathType输入公式，那么刚开始使用LaTeX语法输入公式可能有点陌生，但是没关系，你马上就是适应这种输入公式的感觉。LaTeX语法中公式也分为行内公式和行间公式：行内公式用成对的<code>$</code>符号将字母公式括起来，像这样<code>$</code>y=2x<code>$</code>；行间公式像这样使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">y = 2x</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure></p>
+<p>有时候我们在正文中某个地方需要引用某个公式，那么我们需要先给公式一个唯一的身份，使用<code>\label</code>命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">y = 2x</span><br><span class="line">\label&#123;eq:dynamics&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure></p>
+<p><code>\label{}</code>中的文本可以任意输入，只要不与其它公式重复即可。然后在正文中，使用<code>\ref{eq:dynamics}</code>就可以引用这个公式了。你无需关心这个公式是1-2或者是3-5，LaTeX模板已经替你考虑好了，它会自动按照公式所在的章节进行编号。</p>
+<p>一开始你可能不好应付非常复杂的公式，毕竟LaTeX语法不是所见即所得的。你可以借助MathType来生成LaTeX格式的公式：MathType中打开<code>Preference</code>&gt;<code>Cut and Copy Preferences</code>，设置成<code>MathML or TeX</code> &gt; <code>Plain TeX</code>，此时可以先在MathType输入好公式，然后复制这个公式，粘贴就可以得到LaTeX格式的公式了。注意，对于MathType输入的行间公式，复制粘贴之后会得到<code>\[y=2x\]</code>这种格式，我们将它放到<code>\begin{equation}</code>和<code>\end{equation}</code>之间的时候，只需要复制<code>\[</code>和<code>\]</code>之间的内容，否则公式会报错。</p>
+<h2 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h2><p>图的使用格式是这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;figure&#125;[h!]</span><br><span class="line">	\includegraphics[scale=1.0]&#123;2-4-control.png&#125;</span><br><span class="line">	\caption&#123;磁悬浮轴承系统控制框图&#125;</span><br><span class="line">	\label&#123;fig:2-4-control&#125;</span><br><span class="line">\end&#123;figure&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="单位"><a href="#单位" class="headerlink" title="单位"></a>单位</h2>
+                                                                        
+                                    </div>
+                                    <footer class="article-footer">
+
+                                        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NUA2-Thesis/">NUA2 Thesis</a></li></ul>
+
+                                    </footer>
+
+    </div>
+
+    
+
+                
+
+</article>
+        
+          <article id="post-NUA2 Thesis - 内容填充 （2）" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2020/05/06/NUA2 Thesis - 内容填充 （2）/">NUA2 Thesis | 内容填充 (2)</a>
+    </h2>
+  
+  
+
+
+
+
+            </header>
+            
+
+                
+                    <div class="article-meta">
+                        <a href="/2020/05/06/NUA2 Thesis - 内容填充 （2）/" class="article-date">
   <time datetime="2020-05-06T08:00:00.000Z" itemprop="datePublished">2020-05-06</time>
 </a>
                             
@@ -269,67 +330,6 @@
 
                                                 
                                                     <p>PyTorch 的 HelloWorld 工程：以编写简单的线性回归模型为例，来理解PyTorch的各个模块的使用方法。<br>
-                                                        
-                                                                
-                                    </div>
-                                    <footer class="article-footer">
-
-                                        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PyTorch/">PyTorch</a></li></ul>
-
-                                    </footer>
-
-    </div>
-
-    
-
-                
-
-</article>
-        
-          <article id="post-PyTorch - 使用GPU进行模型训练" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
-
-    <div class="article-inner">
-        
-            <header class="article-header">
-                
-  
-    <h2 itemprop="name">
-      <a class="article-title" href="/2020/04/18/PyTorch - 使用GPU进行模型训练/">PyTorch | 使用GPU进行模型训练</a>
-    </h2>
-  
-  
-
-
-
-
-            </header>
-            
-
-                
-                    <div class="article-meta">
-                        <a href="/2020/04/18/PyTorch - 使用GPU进行模型训练/" class="article-date">
-  <time datetime="2020-04-18T12:01:44.000Z" itemprop="datePublished">2020-04-18</time>
-</a>
-                            
-                    </div>
-                    
-
-                        
-
-                                    <div class="article-entry" itemprop="articleBody">
-                                        
-
-
-                                            
-
-                                                
-                                                    <p>使用NVIDIA GPU进行运算，与使用CPU计算相比，算法代码需要进行改动的有</p>
-<ul>
-<li>模型的输入数据需要转换成GPU支持的数据类型（使用<code>.to(device)</code>）</li>
-<li>模型需要转换成GPU支持的数据类型（使用<code>.to(device)</code>）</li>
-<li>代价函数转换成GPU支持的数据类型（使用<code>.to(device)</code>）</li>
-</ul>
                                                         
                                                                 
                                     </div>
