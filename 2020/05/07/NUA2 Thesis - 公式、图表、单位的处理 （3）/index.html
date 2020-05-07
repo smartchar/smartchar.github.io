@@ -70,7 +70,7 @@
                                             
 
                                                 
-                                                                    <p>&emsp;</p>
+                                                                    <p>&emsp;<br><a id="more"></a></p>
 <h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>如果你之前一直在用MathType输入公式，那么刚开始使用LaTeX语法输入公式可能有点陌生，但是没关系，你马上就是适应这种输入公式的感觉。LaTeX语法中公式也分为行内公式和行间公式：行内公式用成对的<code>$</code>符号将字母公式括起来，像这样<code>$</code>y=2x<code>$</code>；行间公式像这样使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">y = 2x</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure></p>
 <p>有时候我们在正文中某个地方需要引用某个公式，那么我们需要先给公式一个唯一的身份，使用<code>\label</code>命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">y = 2x</span><br><span class="line">\label&#123;eq:dynamics&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure></p>
 <p><code>\label{}</code>中的文本可以任意输入，只要不与其它公式重复即可。然后在正文中，使用<code>\ref{eq:dynamics}</code>就可以引用这个公式了。你无需关心这个公式是1-2或者是3-5，LaTeX模板已经替你考虑好了，它会自动按照公式所在的章节进行编号。</p>
