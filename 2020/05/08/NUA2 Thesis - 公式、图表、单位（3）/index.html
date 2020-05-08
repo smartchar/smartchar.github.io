@@ -76,6 +76,7 @@
 <p>有时候我们在正文中某个地方需要引用某个公式，那么我们需要先给公式一个唯一的身份，使用<code>\label</code>命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">y = 2x</span><br><span class="line">\label&#123;eq:dynamics&#125;</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure></p>
 <p><code>\label{文本}</code>中的文本可以任意输入，只要不与其它公式重复即可。然后在正文中，使用<code>\ref{文本}</code>就可以引用这个公式了。你无需关心这个公式是 1-2 或者是 3-5，LaTeX 模板已经替你考虑好了，它会自动按照公式所在的章节进行编号。</p>
 <p>一开始你可能不好应付非常复杂的公式，毕竟 LaTeX 语法不是所见即所得的。你可以借助 MathType 来生成 LaTeX 格式的公式：MathType 中打开<code>Preference</code>&gt;<code>Cut and Copy Preferences</code>，设置成<code>MathML or TeX</code> &gt; <code>Plain TeX</code>，此时可以先在 MathType 输入好公式，然后复制这个公式，粘贴就可以得到 LaTeX 格式的公式了。注意，对于 MathType 输入的行间公式，复制粘贴之后会得到<code>\[y=2x\]</code>这种格式，我们将它放到<code>\begin{equation}</code>和<code>\end{equation}</code>之间的时候，只需要复制<code>\[</code>和<code>\]</code>之间的内容，否则公式会报错。</p>
+<p>对于各种罗马字符或数学符号，LaTeX 处理不在话下，查阅这份 <a href="MathSymb.pdf">数学符号表</a> 即可。</p>
 <h2 id="2-图表"><a href="#2-图表" class="headerlink" title="2 图表"></a>2 图表</h2><hr>
 <p>图的使用格式是这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;figure&#125;[h!]</span><br><span class="line">	\includegraphics[scale=1.0]&#123;2-4-control.png&#125;</span><br><span class="line">	\caption&#123;磁悬浮轴承系统控制框图&#125;</span><br><span class="line">	\label&#123;fig:2-4-control&#125;</span><br><span class="line">\end&#123;figure&#125;</span><br></pre></td></tr></table></figure></p>
 <p><img src="L3-1.jpg" alt=""></p>
@@ -97,7 +98,7 @@
 <p><img src="L3-3.jpg" alt=""></p>
 <p>其他国际单位的使用方法请查阅这个包的 <a href="siunitx.pdf">使用文档</a>。</p>
 <hr>
-<p>至此，你已经掌握了用这个模板写学位论文的能力。</p>
+<p>至此，你已经掌握了用这个模板写学位论文的能力。其它没有提到的地方请查阅 NUA2 Thesis 的 <a href="nuaathesis.pdf">使用文档</a>（该文档打包在 NUA2 Thesis 压缩包内）。</p>
 <p>选择使用这个模板来写学位论文的你注定不是大多数，这意味着在写的过程中碰到某些问题时，你需要依靠自己去寻找解决方案，去谷歌、<del>去百度</del>、去看使用文档。但是请相信自己，为解决问题而付出时间不仅可以解决问题，也可以给你带来打磨一件工艺品般的成就感。</p>
 <p>最后，这是我用 NUA2 Thesis 写的论文：<a href="https://github.com/smartchar/master_thesis" target="_blank" rel="noopener">《基于重复控制器的磁悬浮轴承振动抑制方法研究》</a>，供你作为格式上的参考。</p>
 
